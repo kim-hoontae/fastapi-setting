@@ -8,3 +8,4 @@ pydantic==1.8.2
 starlette==0.16.0
 PyMySQL==1.0.2
 alembic==1.7.5
+cryptography==36.0.0
