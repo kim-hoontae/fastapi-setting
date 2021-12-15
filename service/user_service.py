@@ -1,5 +1,7 @@
 import re, jwt
 
+from requests.models import Response
+
 from datetime import datetime, timedelta
 from typing import Optional
 
