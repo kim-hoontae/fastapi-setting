@@ -54,7 +54,7 @@ def kakao():
 
 # 카카오 토큰 받기
 @router.get('/login/kakao/callback', tags=['카카오로그인'])
-async def kakaoAuth(token_response: Response, code: Optional[str]="NONE"):
+async def kakaoAuth(token_response: Response, code: Optional[str]=None):
     REST_API_KEY = rest_api_key
     REDIRECT_URI = 'http://localhost:8000/users/login/kakao/callback'
     url          = f'https://kauth.kakao.com/oauth/token?grant_type=authorization_code&client_id={REST_API_KEY}&redirect_uri={REDIRECT_URI}&code={code}'
